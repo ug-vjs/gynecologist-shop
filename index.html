@@ -147,48 +147,146 @@
 </head>
 
 <style>
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  text-align: center;
-}
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-.video-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 50px auto;
-  height: 150px;
-  border-radius: 12px;
-  overflow: hidden; /* disables scrolling inside container */
-}
+    /* Sticky top menu */
+    .menu-bar {
+      position: sticky;
+      top: 0;
+      width: 70%;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 2px solid #ccc;
+      border-radius: 0 0 12px 12px;
+      z-index: 9999;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
 
-iframe {
-  width: 100%;
-  height: 150px;
-  border: none;
-  border-radius: 12px;
-  pointer-events: auto; /* ensure iframe is interactive */
-}
-</style>
+    .menu-bar a {
+      font-family: Georgia, "Palatino Linotype", Palatino, serif;
+      font-weight: 700;
+      padding: 8px 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: opacity 0.3s;
+    }
 
+    .menu-bar a:hover {
+      opacity: 0.8;
+    }
 
+    /* Link colors */
+    .menu-home { background-color: #04ff00; color: #ff00fe; }
+    .menu-movies { background-color: #3d85c6; color: #ffa400; }
+    .menu-blogs { background-color: #fcff01; color: #351c75; }
+    .menu-about { background-color: #01ffff; color: #cc0000; }
+    .menu-contact { background-color: #4c1130; color: #fcff01; font-family: Roboto, sans-serif; }
+    .menu-jobs { background-color: #ff00fe; color: #04ff00; }
 
-<div class="video-container">
-  <iframe allowfullscreen="" scrolling="no" src="https://www.gynecologist.shop/"></iframe>
-</div>
+    /* Page content */
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-<body>
+    h1, h2 {
+      color: #fcff01;
+    }
 
-  <!-- Navigation Menu -->
-  <nav class="menu-bar">
-    <a href="/" class="menu-home">Home</a>
-    <a href="https://www.near-me.gynecologist.shop/movies.html" class="menu-movies">Movies</a>
-    <a href="https://www.near-me.gynecologist.shop/blogs.html" class="menu-blogs">Blogs</a>
-    <a href="https://www.near-me.gynecologist.shop/about-us.html" class="menu-about">About</a>
-    <a href="https://www.gynecologist.shop/p/contact-us.html" class="menu-contact">Contact</a>
-    <a href="https://www.near-me.gynecologist.shop/job-matching.html" class="menu-jobs">Jobs</a>
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    p {
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    figure {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      background: #111;
+      padding: 20px 10px;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #04ff00;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 5px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .menu-bar {
+        width: 95%;
+      }
+      .menu-bar a {
+        font-size: 15px;
+        padding: 6px 10px;
+      }
+      main {
+        margin: 20px auto;
+      }
+    }
+  </style>
+
+  <!--Navigation Menu-->
+  <nav class="menu-bar" style="text-align: center;"><a class="menu-home" href="/">Home</a>
+    <a class="menu-movies" href="https://www.gynecologist.shop/search/label/movies1000">Movies</a>
+    <a class="menu-blogs" href="https://www.gynecologist.shop/search/">Blogs</a>
+    <a class="menu-about" href="https://www.gynecologist.shop/p/about-us.html">About</a>
+    <a class="menu-contact" href="https://www.gynecologist.shop/p/contact-us.html">Contact</a>
+    <a class="menu-jobs" href="https://www.near-me.gynecologist.shop/job-matching.html">Jobs</a>
+     
+      &nbsp;</nav><nav class="menu-bar">
+
+<script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"></script>
+<!--200 by 200-->
+<ins class="adsbygoogle" data-ad-client="ca-pub-2269884583846743" data-ad-slot="1267838847" style="display: inline-block; height: 200px; width: 200px;"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
   </nav>
 
   <main>
@@ -554,148 +652,6 @@ iframe {
       © 2025 Gynecologist. All Rights Reserved.
     </p>
   </footer>
-
-<!-- RIGHT FLOATING AD -->
-<div id="right-float-ad" class="side-float-ad">
-  <div class="side-toggle">Ad (10)</div>
-  <div class="side-content">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
-     crossorigin="anonymous"></script>
-<!-- 200 by 200 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:200px;height:200px"
-     data-ad-client="ca-pub-2269884583846743"
-     data-ad-slot="1267838847"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  </div>
-</div>
-
-<!-- LEFT FLOATING AD -->
-<div id="left-float-ad" class="side-float-ad left">
-  <div class="side-toggle">Ad (10)</div>
-  <div class="side-content">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
-     crossorigin="anonymous"></script>
-    <!-- 150 by 200 -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:150px;height:200px"
-         data-ad-client="ca-pub-2269884583846743"
-         data-ad-slot="2739963578"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-</div>
-
-<style>
-/* -------- COMMON SIDE FLOATING AD STYLE -------- */
-.side-float-ad {
-  position: fixed;
-  bottom: 60px;
-  width: 220px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  overflow: hidden;
-  z-index: 9999;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  transition: all 0.4s ease;
-}
-
-.side-float-ad .side-toggle {
-  background: #f1f1f1;
-  font-size: 13px;
-  color: #333;
-  cursor: not-allowed;
-  padding: 5px 8px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  user-select: none;
-  transition: background 0.3s;
-}
-
-.side-float-ad .side-toggle.enabled {
-  cursor: pointer;
-  user-select: auto;
-  background: #e9e9e9;
-}
-
-.side-float-ad .side-content {
-  transition: all 0.3s ease;
-  display: block;
-  padding: 4px;
-}
-
-/* Right side ad */
-#right-float-ad { right: 10px; }
-#right-float-ad.collapsed { right: -180px; opacity: 0.8; }
-
-/* Left side ad */
-#left-float-ad {
-  left: 10px;
-  width: 170px; /* Slightly narrower to fit 150px ad */
-}
-#left-float-ad.collapsed { left: -140px; opacity: 0.8; }
-
-/* Responsive (mobile) */
-@media (max-width: 600px) {
-  .side-float-ad {
-    width: 180px;
-    bottom: 50px;
-  }
-  #right-float-ad { right: 5px; }
-  #right-float-ad.collapsed { right: -150px; }
-  #left-float-ad { left: 5px; width: 150px; }
-  #left-float-ad.collapsed { left: -130px; }
-  .side-float-ad .side-content ins {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-</style>
-
-<script>
-function setupSideAd(adId) {
-  const ad = document.getElementById(adId);
-  const toggle = ad.querySelector(".side-toggle");
-  const content = ad.querySelector(".side-content");
-
-  let hidden = false;
-  let countdown = 10;
-
-  const countdownInterval = setInterval(() => {
-    countdown--;
-    toggle.textContent = `Ad (${countdown})`;
-    if (countdown <= 0) {
-      clearInterval(countdownInterval);
-      toggle.textContent = "▲ Ad"; // Now uses real arrow
-      toggle.classList.add("enabled");
-      toggle.style.cursor = "pointer";
-      toggle.addEventListener("click", () => {
-        if (!hidden) {
-          content.style.display = "none";
-          toggle.textContent = "▼ Ad"; // Down arrow when collapsed
-          ad.classList.add("collapsed");
-          hidden = true;
-        } else {
-          content.style.display = "block";
-          toggle.textContent = "▲ Ad"; // Up arrow when expanded
-          ad.classList.remove("collapsed");
-          hidden = false;
-        }
-      });
-    }
-  }, 1000);
-}
-
-// Initialize both ads
-setupSideAd("right-float-ad");
-setupSideAd("left-float-ad");
-</script>
 
   <div style='width: 100%; height: 10px; background-color: purple; margin: 50px 0;'/>
 
