@@ -1,220 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>blogs you can use for free</title>
+  <meta charset="UTF-8">
+  <meta name=a"viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gynecologist - VJ JUNIOR translated</title>
 
   <!-- SEO Meta -->
-  <meta name="description" content="Free ranking blog posts to use">
+  <meta name="description" content="Gynecologist - VJ JUNIOR. Watch and Download full Movie translated by VJ Junior #Kagujje #uganda">
 
-  <!-- Stylesheets -->
-  <link href="styles/general.css" rel="stylesheet" />
-  <link href="styles/header.css" rel="stylesheet" />
-  <link href="styles/video.css" rel="stylesheet" />
-  <link href="styles/sidebar.css" rel="stylesheet" />
+ 
+ <h2 style="text-align: center;"><span style="font-size: x-large;">All vjs @Gynecologist</span></h2>
 
-  <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+  <div style="text-align: center;">
+  
+  <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"></script>
+<!--250 ⨯ 250-->
+<ins class="adsbygoogle" data-ad-client="ca-pub-2269884583846743" data-ad-slot="4256856469" style="display: inline-block; height: 250px; width: 250px;"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-    /* Sticky top menu */
-    .menu-bar {
-      position: sticky;
-      top: 0;
-      width: 70%;
-      max-width: 1000px;
-      margin: 0 auto;
-      background: #fff;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      padding: 10px 0;
-      border-bottom: 2px solid #ccc;
-      border-radius: 0 0 12px 12px;
-      z-index: 9999;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
+</div>
+  
+  </main>
 
-    .menu-bar a {
-      font-family: Georgia, "Palatino Linotype", Palatino, serif;
-      font-weight: 700;
-      padding: 8px 14px;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 18px;
-      border-radius: 6px;
-      transition: opacity 0.3s;
-    }
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
+     crossorigin="anonymous"></script>
+<!-- Square Top m2a -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2269884583846743"
+     data-ad-slot="7284297604"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-    .menu-bar a:hover {
-      opacity: 0.8;
-    }
+<!-- Movie Auto-Slider Grid -->
+<div class="movie-slider-wrapper">
+  <div id="movie-slider" class="movie-slider"></div>
+</div>
 
-    /* Link colors */
-    .menu-home { background-color: #04ff00; color: #ff00fe; }
-    .menu-movies { background-color: #3d85c6; color: #ffa400; }
-    .menu-blogs { background-color: #fcff01; color: #351c75; }
-    .menu-about { background-color: #01ffff; color: #cc0000; }
-    .menu-contact { background-color: #4c1130; color: #fcff01; font-family: Roboto, sans-serif; }
-    .menu-jobs { background-color: #ff00fe; color: #04ff00; }
-
-    /* Page content */
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    h1, h2 {
-      color: #fcff01;
-    }
-
-    h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin-top: 30px;
-    }
-
-    p {
-      color: #ddd;
-      margin-bottom: 15px;
-    }
-
-    figure {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    figure img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    /* Footer */
-    .footer {
-      text-align: center;
-      background: #111;
-      padding: 20px 10px;
-      border-top: 1px solid #333;
-      margin-top: 40px;
-    }
-
-    .footer a {
-      color: #04ff00;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 5px;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .menu-bar {
-        width: 95%;
+<script type="text/javascript">
+  function renderMovieSlider(json) {
+    var postsHTML = '';
+    var maxPosts = 10;
+    for (var i = 0; i < Math.min(json.feed.entry.length, maxPosts); i++) {
+      var entry = json.feed.entry[i];
+      var title = entry.title.$t;
+      var url = '';
+      for (var j = 0; j < entry.link.length; j++) {
+        if (entry.link[j].rel === 'alternate') {
+          url = entry.link[j].href;
+          break;
+        }
       }
-      .menu-bar a {
-        font-size: 15px;
-        padding: 6px 10px;
+
+      var imgUrl = '';
+      if (entry.media$thumbnail) {
+        imgUrl = entry.media$thumbnail.url.replace('/s72-c/', '/s640/');
+      } else {
+        var content = entry.content.$t;
+        var imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
+        imgUrl = imgMatch && imgMatch[1] ? imgMatch[1] : 'https://via.placeholder.com/300x450?text=No+Image';
       }
-      main {
-        margin: 20px auto;
+
+      postsHTML += `
+        <div class="movie-card">
+          <a href="${url}" title="${title}" target="_blank" rel="noopener noreferrer">
+            <div class="poster">
+              <img src="${imgUrl}" alt="${title}">
+              <div class="play-button">&#9658;</div>
+            </div>
+            <div class="movie-title">${title}</div>
+          </a>
+        </div>
+      `;
+    }
+    document.getElementById('movie-slider').innerHTML = postsHTML;
+    startMovieSlider();
+  }
+
+  function startMovieSlider() {
+    const slider = document.querySelector('#movie-slider');
+    let scrollAmount = 0;
+    const slideStep = 1; // pixels per frame
+    const slideSpeed = 15; // lower = faster
+    const resetDelay = 2000;
+
+    function autoSlide() {
+      scrollAmount += slideStep;
+      if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+        scrollAmount = 0;
+        slider.scrollTo({ left: 0, behavior: 'auto' });
+        setTimeout(autoSlide, resetDelay);
+      } else {
+        slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+        setTimeout(autoSlide, slideSpeed);
       }
     }
-  </style>
-</head>
-<body>
 
-  <!-- Navigation Menu -->
-  <nav class="menu-bar">
-    <a href="/" class="menu-home">Home</a>
-    <a href="https://www.gynecologist.shop/movies.html" class="menu-movies">Movies</a>
-    <a href="https://www.gynecologist.shop/blogs.html" class="menu-blogs">Blogs</a>
-    <a href="https://www.gynecologist.shop/about-us.html" class="menu-about">About</a>
-    <a href="https://www.gynecologist.shop/contact-us.html" class="menu-contact">Contact</a>
-    <a href="https://www.gynecologist.shop/job-matching.html" class="menu-jobs">Jobs</a>
-  </nav>
+    autoSlide();
+  }
+</script>
 
-  <main>
 
-<!-- Movie Grid Section -->
+<!-- Blogger JSON Feed for label "mobland", showing 10 posts -->
+<script src="https://www.marketing2advertising.com/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
+
+<style>
+  .movie-slider-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+  }
+
+  .movie-slider {
+    display: flex;
+    gap: 20px;
+    padding: 10px 30px;
+  }
+
+  .movie-card {
+    min-width: 180px;
+    max-width: 180px;
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+
+  .poster {
+    position: relative;
+    aspect-ratio: 2/3;
+    overflow: hidden;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s ease;
+  }
+
+  .movie-card:hover img {
+    filter: brightness(0.5);
+    transform: scale(1.05);
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    background: rgba(229, 9, 20, 0.9);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    box-shadow: 0 0 20px #e50914;
+    pointer-events: none;
+  }
+
+  .movie-title {
+    text-align: center;
+    background: #e50914;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 600px) {
+    .movie-card {
+      min-width: 130px;
+      max-width: 130px;
+    }
+
+    .play-button {
+      font-size: 36px;
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+
+    .movie-title {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .movie-slider {
+      gap: 14px;
+      padding: 10px 20px;
+    }
+  }
+</style>
+  
+<style>
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    max-width: 500px;
+    width: 90%;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 6px 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  .search-box button {
+    background: gold;
+    border: none;
+    padding: 10px 18px;
+    margin-left: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+  }
+  .search-box button:hover { background: #e6b800; }
+
+  #results {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .result-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+  }
+  .result-card:hover { transform: translateY(-4px); }
+
+  .result-image-wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+  .result-image-wrapper img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .play-button::after {
+    content: "";
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent #ff0000;
+    margin-left: 4px;
+  }
+
+  .result-card-content {
+    padding: 12px;
+  }
+  .result-card a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .result-card p {
+    font-size: 14px;
+    color: #555;
+  }
+</style>
+
+<form class="search-box" onsubmit="searchPosts(event)">
+  <input id="search-input" type="text"/>
+  <button type="submit">Search</button>
+</form>
+
+<div id="results"></div>
+
+<script>
+async function searchPosts(e, auto = false) {
+  if (e) e.preventDefault();
+  const query = document.getElementById("search-input").value;
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "<p>Loading...</p>";
+
+  try {
+    const res = await fetch(`https://paypalads.com/wp-json/wp/v2/posts?_embed&search=${encodeURIComponent(query)}`);
+    const posts = await res.json();
+
+    if (posts.length === 0) {
+      resultsDiv.innerHTML = "<p>No results found.</p>";
+      return;
+    }
+
+    resultsDiv.innerHTML = posts.map(post => {
+      let imgHtml = "";
+      if (post._embedded && post._embedded['wp:featuredmedia']) {
+        const imgUrl = post._embedded['wp:featuredmedia'][0].source_url;
+        imgHtml = `
+          <div class="result-image-wrapper" onclick="window.open('${post.link}', '_blank')">
+            <img src="${imgUrl}" alt="${post.title.rendered}">
+            <div class="play-button"></div>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="result-card">
+          ${imgHtml}
+          <div class="result-card-content">
+            <a href="${post.link}" target="_blank">${post.title.rendered}</a>
+            <p>${post.excerpt.rendered.replace(/<[^>]+>/g, "").substring(0, 120)}...</p>
+          </div>
+        </div>
+      `;
+    }).join("");
+  } catch (err) {
+    resultsDiv.innerHTML = "<p>Error fetching results.</p>";
+  }
+}
+
+// Auto search on page load
+window.addEventListener("DOMContentLoaded", () => {
+  const defaultKeyword = " "; // change this word as needed
+  document.getElementById("search-input").value = defaultKeyword;
+  searchPosts(null, true);
+});
+</script>
+
+  <!-- ✅ SIDE FLOATING AD -->
+<div id="side-float-ad">
+  <div id="side-toggle">Ad (10)</div>
+  <div id="side-content">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
+     crossorigin="anonymous"></script>
+<!-- 200 by 200 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:200px"
+     data-ad-client="ca-pub-2269884583846743"
+     data-ad-slot="1267838847"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+<!-- ✅ BOTTOM ANCHOR AD -->
+<div id="anchor-ad-bottom">
+  <div id="anchor-toggle-bottom">Ad (10)</div>
+  <div id="anchor-content-bottom">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
+     crossorigin="anonymous"></script>
+<!-- 768 ad by 90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:768px;height:90px"
+     data-ad-client="ca-pub-2269884583846743"
+     data-ad-slot="5742141919"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  </div>
+</div>
+
+<style>
+/* -------- SIDE FLOATING AD -------- */
+#side-float-ad {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+#side-toggle {
+  background: #f1f1f1;
+  font-size: 13px;
+  color: #333;
+  cursor: not-allowed;
+  padding: 5px 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  user-select: none;
+}
+#side-toggle.enabled {
+  cursor: pointer;
+  user-select: auto;
+  background: #e9e9e9;
+}
+#side-content {
+  transition: all 0.3s ease;
+  display: block;
+  padding: 4px;
+}
+/* Collapsed (slides partially off-screen) */
+#side-float-ad.collapsed {
+  right: -180px;
+  opacity: 0.8;
+}
+
+/* -------- BOTTOM ANCHOR AD -------- */
+#anchor-ad-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9998;
+  width: 100%;
+  max-width: 768px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  border-top: 1px solid #ddd;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+}
+#anchor-toggle-bottom {
+  background: #f1f1f1;
+  font-size: 13px;
+  color: #333;
+  cursor: not-allowed;
+  padding: 4px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  user-select: none;
+}
+#anchor-toggle-bottom.enabled {
+  cursor: pointer;
+  user-select: auto;
+}
+#anchor-content-bottom {
+  transition: all 0.3s ease;
+}
+
+/* Page spacing so content isn’t hidden */
+body {
+  padding-bottom: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #side-float-ad {
+    right: 5px;
+    width: 180px;
+    bottom: 50px;
+  }
+  #side-float-ad.collapsed {
+    right: -150px;
+  }
+  #anchor-content-bottom ins {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 768px;
+  }
+}
+</style>
+
+<script>
+/* -------- SIDE AD SCRIPT -------- */
+const sideToggle = document.getElementById("side-toggle");
+const sideContent = document.getElementById("side-content");
+const sideAd = document.getElementById("side-float-ad");
+
+let hiddenSide = false;
+let sideCountdown = 10;
+
+const sideInterval = setInterval(() => {
+  sideCountdown--;
+  sideToggle.textContent = `Ad (${sideCountdown})`;
+  if (sideCountdown <= 0) {
+    clearInterval(sideInterval);
+    sideToggle.textContent = "🔼 Ad"; // up arrow emoji
+    sideToggle.classList.add("enabled");
+    sideToggle.addEventListener("click", toggleSideAd);
+  }
+}, 1000);
+
+function toggleSideAd() {
+  if (!hiddenSide) {
+    sideContent.style.display = "none";
+    sideToggle.innerHTML = "🔽 Ad"; // down arrow emoji
+    sideAd.classList.add("collapsed");
+    hiddenSide = true;
+  } else {
+    sideContent.style.display = "block";
+    sideToggle.innerHTML = "🔼 Ad";
+    sideAd.classList.remove("collapsed");
+    hiddenSide = false;
+  }
+}
+
+/* -------- BOTTOM AD SCRIPT -------- */
+const toggleBottom = document.getElementById("anchor-toggle-bottom");
+const contentBottom = document.getElementById("anchor-content-bottom");
+
+let hiddenBottom = false;
+let bottomCountdown = 10;
+
+const bottomInterval = setInterval(() => {
+  bottomCountdown--;
+  toggleBottom.textContent = `Ad (${bottomCountdown})`;
+  if (bottomCountdown <= 0) {
+    clearInterval(bottomInterval);
+    toggleBottom.textContent = "🔼 Ad"; // up arrow emoji
+    toggleBottom.classList.add("enabled");
+    toggleBottom.addEventListener("click", toggleBottomAd);
+  }
+}, 1000);
+
+function toggleBottomAd() {
+  if (!hiddenBottom) {
+    contentBottom.style.display = "none";
+    toggleBottom.innerHTML = "🔽 Ad"; // down arrow emoji
+    hiddenBottom = true;
+  } else {
+    contentBottom.style.display = "block";
+    toggleBottom.innerHTML = "🔼 Ad";
+    hiddenBottom = false;
+  }
+}
+</script>
+
+
+<!-- Movie Auto-Slider Grid -->
+<div class="movie-slider-wrapper">
+  <div id="movie-slider" class="movie-slider"></div>
+</div>
+
+<script type="text/javascript">
+  function renderMovieSlider(json) {
+    var postsHTML = '';
+    var maxPosts = 10;
+    for (var i = 0; i < Math.min(json.feed.entry.length, maxPosts); i++) {
+      var entry = json.feed.entry[i];
+      var title = entry.title.$t;
+      var url = '';
+      for (var j = 0; j < entry.link.length; j++) {
+        if (entry.link[j].rel === 'alternate') {
+          url = entry.link[j].href;
+          break;
+        }
+      }
+
+      var imgUrl = '';
+      if (entry.media$thumbnail) {
+        imgUrl = entry.media$thumbnail.url.replace('/s72-c/', '/s640/');
+      } else {
+        var content = entry.content.$t;
+        var imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
+        imgUrl = imgMatch && imgMatch[1] ? imgMatch[1] : 'https://via.placeholder.com/300x450?text=No+Image';
+      }
+
+      postsHTML += `
+        <div class="movie-card">
+          <a href="${url}" title="${title}" target="_blank" rel="noopener noreferrer">
+            <div class="poster">
+              <img src="${imgUrl}" alt="${title}">
+              <div class="play-button">&#9658;</div>
+            </div>
+            <div class="movie-title">${title}</div>
+          </a>
+        </div>
+      `;
+    }
+    document.getElementById('movie-slider').innerHTML = postsHTML;
+    startMovieSlider();
+  }
+
+  function startMovieSlider() {
+    const slider = document.querySelector('#movie-slider');
+    let scrollAmount = 0;
+    const slideStep = 1; // pixels per frame
+    const slideSpeed = 15; // lower = faster
+    const resetDelay = 2000;
+
+    function autoSlide() {
+      scrollAmount += slideStep;
+      if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+        scrollAmount = 0;
+        slider.scrollTo({ left: 0, behavior: 'auto' });
+        setTimeout(autoSlide, resetDelay);
+      } else {
+        slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+        setTimeout(autoSlide, slideSpeed);
+      }
+    }
+
+    autoSlide();
+  }
+</script>
+
+
+<!-- 🔍 SEARCH BOX -->
+<div class="search-bar-wrapper">
+  <input type="text" id="searchInput" placeholder="Search-Movies..." />
+  <button id="searchBtn">&#128269;</button>
+</div>
+
+<!-- 🔎 SEARCH RESULTS -->
+<div id="searchResults" class="search-results"></div>
+
+<style>
+/* ===== SEARCH BOX STYLE ===== */
+.search-bar-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar-wrapper input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 50px;
+  border: 2px solid #fcff01;
+  background: #111;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar-wrapper input:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 10px #e50914;
+}
+
+.search-bar-wrapper button {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.search-bar-wrapper button:hover {
+  transform: scale(1.1);
+  background: #b00610;
+}
+
+/* ===== SEARCH RESULTS ===== */
+.search-results {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  color: #fff;
+}
+
+.result-card {
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: scale(1.05);
+}
+
+.result-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.result-title {
+  background: #e50914;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+</style>
+
+<script>
+// === BLOGGER SITE URL ===
+const BLOG_URL = "https://www.marketing2advertising.com/";
+
+/* --- Fetch Blogger Posts by Search Query --- */
+function searchPosts(query) {
+  if (!query) return;
+  const script = document.createElement("script");
+  script.src = `${BLOG_URL}/feeds/posts/default?alt=json-in-script&q=${encodeURIComponent(query)}&max-results=30&callback=showSearchResults`;
+  document.body.appendChild(script);
+}
+
+/* --- Render Search Results --- */
+function showSearchResults(json) {
+  const container = document.getElementById("searchResults");
+  container.innerHTML = "";
+
+  if (!json.feed || !json.feed.entry) {
+    container.innerHTML = `<p style="text-align:center;color:#aaa;">No results found.</p>`;
+    return;
+  }
+
+  let html = "";
+  json.feed.entry.forEach(entry => {
+    const title = entry.title.$t;
+    let url = "";
+    let img = "https://via.placeholder.com/300x450?text=No+Image";
+
+    // Post link
+    if (entry.link) {
+      entry.link.forEach(l => {
+        if (l.rel === "alternate") url = l.href;
+      });
+    }
+
+    // Thumbnail
+    if (entry.media$thumbnail) {
+      img = entry.media$thumbnail.url.replace("/s72-c/", "/s400/");
+    } else if (entry.content) {
+      const match = entry.content.$t.match(/<img[^>]+src="([^">]+)"/);
+      if (match) img = match[1];
+    }
+
+    html += `
+      <div class="result-card">
+        <a href="${url}" target="_blank" rel="noopener noreferrer">
+          <img src="${img}" alt="${title}">
+          <div class="result-title">${title}</div>
+        </a>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
+/* --- Search Button Event --- */
+document.getElementById("searchBtn").addEventListener("click", () => {
+  const query = document.getElementById("searchInput").value.trim();
+  searchPosts(query);
+});
+
+/* --- Allow "Enter" Key to Search --- */
+document.getElementById("searchInput").addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    document.getElementById("searchBtn").click();
+  }
+});
+</script>
+
+ <!-- Movie Grid Section -->
 <div class="movie-grid-wrapper">
-  <h2 class="grid-title">Latest Movies & Series</h2>
+  <h2 class="grid-title">What Would You Like to Watch?</h2>
   <div id="movie-grid" class="movie-grid"></div>
 </div>
 
 <script type="text/javascript">
-  // Configurable feed URLs (add as many as you want)
-  const FEED_URLS = [
-    "https://www.near-me.gynecologist.shop/feeds/posts/default/-/info?alt=json-in-script&max-results=100",
-    "https://www.near-me.gynecologist.shop/feeds/posts/default/-/movies1000?alt=json-in-script&max-results=100"
-  ];
+  function renderMovieSlider(json) {
+    const postsContainer = document.getElementById('movie-grid');
+    let postsHTML = '';
+    const maxPosts = 50; // Show 50 posts in grid
 
-  let allEntries = [];
-  let feedsLoaded = 0;
-
-  function renderCombinedFeeds(json) {
-    // Collect entries from each feed
-    if (json && json.feed && json.feed.entry) {
-      allEntries = allEntries.concat(json.feed.entry);
-    }
-
-    feedsLoaded++;
-
-    // Once all feeds are loaded, render the grid
-    if (feedsLoaded === FEED_URLS.length) {
-      displayMovieGrid(allEntries);
-    }
-  }
-
-  function displayMovieGrid(entries) {
-    const postsContainer = document.getElementById("movie-grid");
-    let postsHTML = "";
-    const maxPosts = 50;
-
-    // Shuffle entries so both feeds mix randomly
-    entries = entries.sort(() => 0.5 - Math.random());
-
-    for (let i = 0; i < Math.min(entries.length, maxPosts); i++) {
-      const entry = entries[i];
+    for (let i = 0; i < Math.min(json.feed.entry.length, maxPosts); i++) {
+      const entry = json.feed.entry[i];
       const title = entry.title.$t;
-      let url = "";
-      let imgUrl = "";
 
-      // Get post link
-      if (entry.link) {
-        for (let j = 0; j < entry.link.length; j++) {
-          if (entry.link[j].rel === "alternate") {
-            url = entry.link[j].href;
-            break;
-          }
+      // Find post URL
+      let url = '';
+      for (let j = 0; j < entry.link.length; j++) {
+        if (entry.link[j].rel === 'alternate') {
+          url = entry.link[j].href;
+          break;
         }
       }
 
-      // Get thumbnail
+      // Find image
+      let imgUrl = '';
       if (entry.media$thumbnail) {
-        imgUrl = entry.media$thumbnail.url.replace("/s72-c/", "/s640/");
+        imgUrl = entry.media$thumbnail.url.replace('/s72-c/', '/s640/');
       } else if (entry.content) {
-        const imgMatch = entry.content.$t.match(/<img[^>]+src="([^">]+)"/);
-        imgUrl = imgMatch && imgMatch[1] ? imgMatch[1] : "https://via.placeholder.com/300x450?text=No+Image";
+        const content = entry.content.$t;
+        const imgMatch = content.match(/<img[^>]+src="([^">]+)"/);
+        imgUrl = imgMatch && imgMatch[1] ? imgMatch[1] : 'https://via.placeholder.com/300x450?text=No+Image';
       } else {
-        imgUrl = "https://via.placeholder.com/300x450?text=No+Image";
+        imgUrl = 'https://via.placeholder.com/300x450?text=No+Image';
       }
 
       postsHTML += `
@@ -232,14 +852,10 @@
 
     postsContainer.innerHTML = postsHTML;
   }
-
-  // Dynamically load feeds
-  FEED_URLS.forEach((url) => {
-    const script = document.createElement("script");
-    script.src = url + "&callback=renderCombinedFeeds";
-    document.body.appendChild(script);
-  });
 </script>
+
+<!-- Blogger JSON Feed (label: movies1000) -->
+<script src="https://www.marketing2advertising.com/feeds/posts/default/-/movies1000?alt=json-in-script&callback=renderMovieSlider&max-results=1000"></script>
 
 <style>
   .movie-grid-wrapper {
@@ -334,7 +950,7 @@
     justify-content: center;
   }
 
-  /* Responsive */
+  /* Responsive Adjustments */
   @media (max-width: 768px) {
     .movie-grid {
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -358,14 +974,12 @@
     .grid-title {
       font-size: 20px;
     }
-
     .movie-grid {
       grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
       gap: 12px;
     }
   }
 </style>
-
 
 </main>
 <!-- 🔍 SEARCH BOX -->
@@ -462,7 +1076,7 @@
 
 <script>
 // === BLOGGER SITE URL ===
-const BLOG_URL = "https://www.near-me.gynecologist.shop";
+const BLOG_URL = "https://www.marketing2advertising.com";
 
 /* --- Fetch Blogger Posts by Search Query --- */
 function searchPosts(query) {
@@ -531,313 +1145,17 @@ document.getElementById("searchInput").addEventListener("keypress", (e) => {
 </script>
 
   <footer class="footer">
-    <div>
+    <div style="text-align: center;">
       <a href="https://www.gynecologist.shop/contact-us.html" target="_blank">Contact Us</a> |
       <a href="https://www.gynecologist.shop/movies.html" target="_blank">Movies</a> |
-      <a href="https://www.gynecologist.shop/privacy-policy.html" target="_blank">Privacy Policy</a> |
-      <a href="https://www.gynecologist.shop/terms-and-conditions.html" target="_blank">Terms & Conditions</a> |
+      <a href="https://www.gynecologist.shop/privacy-policy" target="_blank">Privacy Policy</a> |
+      <a href="https://www.gynecologist.shop/terms-and-conditions" target="_blank">Terms &amp; Conditions</a> |
       <a href="https://www.gynecologist.shop/disclosure.html" target="_blank">Disclosure</a>
     </div>
-    <p style="margin-top:10px; color:#aaa;">
+    <p style="color: #aaaaaa; margin-top: 10px; text-align: center;">
       © 2025 Gynecologist. All Rights Reserved.
     </p>
   </footer>
-
-<!-- RIGHT FLOATING AD -->
-<div id="right-float-ad" class="side-float-ad">
-  <div class="side-toggle">Ad (10)</div>
-  <div class="side-content">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
-     crossorigin="anonymous"></script>
-<!-- 200 by 200 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:200px;height:200px"
-     data-ad-client="ca-pub-2269884583846743"
-     data-ad-slot="1267838847"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  </div>
-</div>
-
-<!-- LEFT FLOATING AD -->
-<div id="left-float-ad" class="side-float-ad left">
-  <div class="side-toggle">Ad (10)</div>
-  <div class="side-content">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"
-     crossorigin="anonymous"></script>
-    <!-- 150 by 200 -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:150px;height:200px"
-         data-ad-client="ca-pub-2269884583846743"
-         data-ad-slot="2739963578"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-</div>
-
-<style>
-/* -------- COMMON SIDE FLOATING AD STYLE -------- */
-.side-float-ad {
-  position: fixed;
-  bottom: 60px;
-  width: 220px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  overflow: hidden;
-  z-index: 9999;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  transition: all 0.4s ease;
-}
-
-.side-float-ad .side-toggle {
-  background: #f1f1f1;
-  font-size: 13px;
-  color: #333;
-  cursor: not-allowed;
-  padding: 5px 8px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  user-select: none;
-  transition: background 0.3s;
-}
-
-.side-float-ad .side-toggle.enabled {
-  cursor: pointer;
-  user-select: auto;
-  background: #e9e9e9;
-}
-
-.side-float-ad .side-content {
-  transition: all 0.3s ease;
-  display: block;
-  padding: 4px;
-}
-
-/* Right side ad */
-#right-float-ad { right: 10px; }
-#right-float-ad.collapsed { right: -180px; opacity: 0.8; }
-
-/* Left side ad */
-#left-float-ad {
-  left: 10px;
-  width: 170px; /* Slightly narrower to fit 150px ad */
-}
-#left-float-ad.collapsed { left: -140px; opacity: 0.8; }
-
-/* Responsive (mobile) */
-@media (max-width: 600px) {
-  .side-float-ad {
-    width: 180px;
-    bottom: 50px;
-  }
-  #right-float-ad { right: 5px; }
-  #right-float-ad.collapsed { right: -150px; }
-  #left-float-ad { left: 5px; width: 150px; }
-  #left-float-ad.collapsed { left: -130px; }
-  .side-float-ad .side-content ins {
-    width: 100% !important;
-    height: auto !important;
-  }
-}
-</style>
-
-<script>
-function setupSideAd(adId) {
-  const ad = document.getElementById(adId);
-  const toggle = ad.querySelector(".side-toggle");
-  const content = ad.querySelector(".side-content");
-
-  let hidden = false;
-  let countdown = 10;
-
-  const countdownInterval = setInterval(() => {
-    countdown--;
-    toggle.textContent = `Ad (${countdown})`;
-    if (countdown <= 0) {
-      clearInterval(countdownInterval);
-      toggle.textContent = "▲ Ad"; // Now uses real arrow
-      toggle.classList.add("enabled");
-      toggle.style.cursor = "pointer";
-      toggle.addEventListener("click", () => {
-        if (!hidden) {
-          content.style.display = "none";
-          toggle.textContent = "▼ Ad"; // Down arrow when collapsed
-          ad.classList.add("collapsed");
-          hidden = true;
-        } else {
-          content.style.display = "block";
-          toggle.textContent = "▲ Ad"; // Up arrow when expanded
-          ad.classList.remove("collapsed");
-          hidden = false;
-        }
-      });
-    }
-  }, 1000);
-}
-
-// Initialize both ads
-setupSideAd("right-float-ad");
-setupSideAd("left-float-ad");
-</script>
-
-  <div style='width: 100%; height: 10px; background-color: purple; margin: 50px 0;'/>
-
-<!-- Anchor Ad Placement -->
-<div id="anchor-ad">
-  <div id="anchor-toggle">▲ Ad</div>
-  
-  <div id="anchor-content">
-    <div id="ad-anchor-container" style="min-height:100px;"></div>
-  </div>
-</div>
-
-<style>
-#anchor-ad {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  width: 100%;
-  max-width: 768px;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
-  border-top: 1px solid #ddd;
-  font-family: sans-serif;
-  transition: all 0.3s ease;
-}
-#anchor-toggle {
-  background: #f1f1f1;
-  font-size: 13px;
-  color: #333;
-  cursor: pointer;
-  padding: 4px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  pointer-events: auto;
-}
-#anchor-content {
-  transition: all 0.3s ease;
-}
-body {
-  padding-bottom: 120px;
-}
-
-/* Sticky mode */
-#anchor-ad.sticky {
-  top: 0 !important;
-  bottom: auto !important;
-}
-</style>
-
-<script>
-// Ad rotation units
-const adUnits = [
-  `
-  <!-- Square ad -->
-  <ins class="adsbygoogle"
-       data-ad-client="ca-pub-2269884583846743"
-       data-ad-slot="3828853509"
-       data-ad-format="auto"
-       data-full-width-responsive="true"
-       style="display:block"></ins>
-  `,
-  `
-  <!-- Horizontal ad -->
-  <ins class="adsbygoogle"
-       data-ad-client="ca-pub-2269884583846743"
-       data-ad-slot="1481343022"
-       data-ad-format="auto"
-       data-full-width-responsive="true"
-       style="display:block"></ins>
-  `
-];
-
-const anchorContainer = document.getElementById("ad-anchor-container");
-const anchorAd = document.getElementById("anchor-ad");
-const toggleBtn = document.getElementById("anchor-toggle");
-const content = document.getElementById("anchor-content");
-let currentAdIndex = 0;
-let hidden = false;
-let rotationInterval;
-
-// Load ad function
-function loadAd(index, container) {
-  container.innerHTML = adUnits[index];
-  try {
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  } catch(e) { console.warn("AdSense load error:", e); }
-}
-
-// Load initial ad
-loadAd(currentAdIndex, anchorContainer);
-
-// Start rotation
-function startRotation() {
-  rotationInterval = setInterval(() => {
-    currentAdIndex = (currentAdIndex + 1) % adUnits.length;
-    loadAd(currentAdIndex, anchorContainer);
-  }, 35000);
-}
-
-// Stop rotation
-function stopRotation() {
-  clearInterval(rotationInterval);
-}
-
-// Start rotation initially
-startRotation();
-
-// Anchor toggle functionality
-toggleBtn.addEventListener("click", function() {
-  if (!hidden) {
-    content.style.display = "none";
-    toggleBtn.innerHTML = "▼ Ad";
-    hidden = true;
-    stopRotation(); // stop rotation when minimized
-  } else {
-    content.style.display = "block";
-    toggleBtn.innerHTML = "▲ Ad";
-    hidden = false;
-    startRotation(); // resume rotation when expanded
-  }
-});
-
-// Sticky temporary behavior with countdown
-setTimeout(() => {
-  // Auto-expand if minimized
-  if (hidden) {
-    content.style.display = "block";
-    toggleBtn.innerHTML = "▲ Ad";
-    hidden = false;
-    startRotation(); // resume rotation if it was paused
-  }
-
-  anchorAd.classList.add("sticky"); // make sticky at top
-  let countdown = 4;
-
-  // Disable toggle while counting
-  toggleBtn.style.pointerEvents = "none";
-
-  toggleBtn.innerHTML = countdown;
-  const interval = setInterval(() => {
-    countdown--;
-    toggleBtn.innerHTML = countdown > 0 ? countdown : "▲ Ad";
-    if (countdown <= 0) {
-      clearInterval(interval);
-      anchorAd.classList.remove("sticky"); // back to normal bottom
-      toggleBtn.innerHTML = "▲ Ad";
-      toggleBtn.style.pointerEvents = "auto"; // enable toggle again
-    }
-  }, 1000);
-}, 2000); // wait 2 seconds before sticky
-</script>
 
 <!-- Google AdSense Script -->
 <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"></script>
