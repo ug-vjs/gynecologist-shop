@@ -2,6 +2,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Google AdSense script -->
+<script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"></script>
+
+<!-- Overlay container -->
+<div id="ad-overlay" style="
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    z-index:999999;
+    justify-content:center;
+    align-items:center;
+">
+    <div style="position:absolute; top:20px; right:20px; text-align:right;">
+        <div id="countdown" style="color:white; font-size:22px; font-weight:bold; margin-bottom:8px;"></div>
+        <button id="close-ad" style="display:none; background:#fff; border:none; font-size:20px; padding:6px 12px; cursor:pointer; border-radius:4px;">&#10006;</button>
+    </div>
+
+    <div id="ad-wrapper" style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        height:100%;
+        text-align:center;
+    "></div>
+</div>
+
+<script>
+    /* Rotating ads */
+    const ads = [
+        { client: "ca-pub-2269884583846743", slot: "2359999321", width: 300, height: 250 },
+        { client: "ca-pub-2269884583846743", slot: "4256856469", width: 250, height: 250 },
+        { client: "ca-pub-2269884583846743", slot: "2038317814", width: 300, height: 600 },
+        { client: "ca-pub-2269884583846743", slot: "8811425590", width: 320, height: 100 },
+        { client: "ca-pub-2269884583846743", slot: "5610977415", width: 336, height: 280 }
+    ];
+
+    let currentAdIndex = 0;
+
+    function showAdOverlay() {
+        const overlay = document.getElementById("ad-overlay");
+        const countdownEl = document.getElementById("countdown");
+        const closeBtn = document.getElementById("close-ad");
+        const adWrapper = document.getElementById("ad-wrapper");
+
+        overlay.style.display = "flex";
+        closeBtn.style.display = "none";
+        adWrapper.innerHTML = "";
+
+        /* Load ad */
+        const ad = ads[currentAdIndex];
+        const ins = document.createElement("ins");
+        ins.className = "adsbygoogle";
+        ins.style.display = "inline-block";
+        ins.style.width = ad.width + "px";
+        ins.style.height = ad.height + "px";
+        ins.setAttribute("data-ad-client", ad.client);
+        ins.setAttribute("data-ad-slot", ad.slot);
+
+        adWrapper.appendChild(ins);
+        (adsbygoogle = window.adsbygoogle || []).push({});
+
+        /* Rotate to next ad */
+        currentAdIndex = (currentAdIndex + 1) % ads.length;
+
+        /* 8-second countdown */
+        let timeLeft = 8;
+        countdownEl.textContent = "Close available in: " + timeLeft;
+
+        const timer = setInterval(() => {
+            timeLeft--;
+            countdownEl.textContent = "Close available in: " + timeLeft;
+
+            if (timeLeft === 0) {
+                closeBtn.style.display = "inline-block";
+                clearInterval(timer);
+            }
+        }, 1000);
+    }
+
+    /* -------------------------------------------------------
+       SHOW ORDER (your updated list)
+       1) ❌ Immediately (removed)
+       2) ✔ 40 seconds
+       3) ✔ 2m 20s  = 140,000 ms
+       4) ✔ 5m 30s  = 330,000 ms
+       5) ✔ 8m 30s  = 510,000 ms
+       6) ✔ Every 10m 30s = 630,000 ms
+    ------------------------------------------------------- */
+
+    /* 40 seconds */
+    setTimeout(showAdOverlay, 40000);
+
+    /* 2 minutes 20 seconds */
+    setTimeout(showAdOverlay, 140000);
+
+    /* 5 minutes 30 seconds */
+    setTimeout(showAdOverlay, 330000);
+
+    /* 8 minutes 30 seconds */
+    setTimeout(showAdOverlay, 510000);
+
+    /* Repeat every 10 minutes 30 seconds forever */
+    setInterval(showAdOverlay, 630000);
+
+    /* Close button */
+    document.getElementById("close-ad").onclick = function () {
+        document.getElementById("ad-overlay").style.display = "none";
+    };
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VJ JUNIOR - THE MARVELS translated Movies mu luganda 2026 | VJ Junior, VJ Jingo, VJ Kevo Watch Movies for free</title>
