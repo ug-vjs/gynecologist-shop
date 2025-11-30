@@ -3,123 +3,6 @@
 <html lang="en">
 <head>
 
-<!-- Google AdSense script -->
-<script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743"></script>
-
-<!-- Overlay container -->
-<div id="ad-overlay" style="
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.75);
-    z-index:999999;
-    justify-content:center;
-    align-items:center;
-">
-    <div style="position:absolute; top:20px; right:20px; text-align:right;">
-        <div id="countdown" style="color:white; font-size:22px; font-weight:bold; margin-bottom:8px;"></div>
-        <button id="close-ad" style="display:none; background:#fff; border:none; font-size:20px; padding:6px 12px; cursor:pointer; border-radius:4px;">&#10006;</button>
-    </div>
-
-    <div id="ad-wrapper" style="
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        width:100%;
-        height:100%;
-        text-align:center;
-    "></div>
-</div>
-
-<script>
-    /* Rotating ads */
-    const ads = [
-        { client: "ca-pub-2269884583846743", slot: "2359999321", width: 300, height: 250 },
-        { client: "ca-pub-2269884583846743", slot: "4256856469", width: 250, height: 250 },
-        { client: "ca-pub-2269884583846743", slot: "2038317814", width: 300, height: 600 },
-        { client: "ca-pub-2269884583846743", slot: "8811425590", width: 320, height: 100 },
-        { client: "ca-pub-2269884583846743", slot: "5610977415", width: 336, height: 280 }
-    ];
-
-    let currentAdIndex = 0;
-
-    function showAdOverlay() {
-        const overlay = document.getElementById("ad-overlay");
-        const countdownEl = document.getElementById("countdown");
-        const closeBtn = document.getElementById("close-ad");
-        const adWrapper = document.getElementById("ad-wrapper");
-
-        overlay.style.display = "flex";
-        closeBtn.style.display = "none";
-        adWrapper.innerHTML = "";
-
-        /* Load ad */
-        const ad = ads[currentAdIndex];
-        const ins = document.createElement("ins");
-        ins.className = "adsbygoogle";
-        ins.style.display = "inline-block";
-        ins.style.width = ad.width + "px";
-        ins.style.height = ad.height + "px";
-        ins.setAttribute("data-ad-client", ad.client);
-        ins.setAttribute("data-ad-slot", ad.slot);
-
-        adWrapper.appendChild(ins);
-        (adsbygoogle = window.adsbygoogle || []).push({});
-
-        /* Rotate to next ad */
-        currentAdIndex = (currentAdIndex + 1) % ads.length;
-
-        /* 8-second countdown */
-        let timeLeft = 8;
-        countdownEl.textContent = "Close available in: " + timeLeft;
-
-        const timer = setInterval(() => {
-            timeLeft--;
-            countdownEl.textContent = "Close available in: " + timeLeft;
-
-            if (timeLeft === 0) {
-                closeBtn.style.display = "inline-block";
-                clearInterval(timer);
-            }
-        }, 1000);
-    }
-
-    /* -------------------------------------------------------
-       SHOW ORDER (your updated list)
-       1) ❌ Immediately (removed)
-       2) ✔ 40 seconds
-       3) ✔ 2m 20s  = 140,000 ms
-       4) ✔ 5m 30s  = 330,000 ms
-       5) ✔ 8m 30s  = 510,000 ms
-       6) ✔ Every 10m 30s = 630,000 ms
-    ------------------------------------------------------- */
-
-    /* 40 seconds */
-    setTimeout(showAdOverlay, 40000);
-
-    /* 2 minutes 20 seconds */
-    setTimeout(showAdOverlay, 140000);
-
-    /* 5 minutes 30 seconds */
-    setTimeout(showAdOverlay, 330000);
-
-    /* 8 minutes 30 seconds */
-    setTimeout(showAdOverlay, 510000);
-
-    /* Repeat every 10 minutes 30 seconds forever */
-    setInterval(showAdOverlay, 630000);
-
-    /* Close button */
-    document.getElementById("close-ad").onclick = function () {
-        document.getElementById("ad-overlay").style.display = "none";
-    };
-</script>
-
-
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Man on Fire vj junior translated Movies mu luganda 2026 | VJ Junior, VJ Jingo, VJ Kevo Watch Movies for free</title>
@@ -128,12 +11,166 @@
   <meta name="description" content=" Man on Fire vj junior Free Translated Movies 2026 | VJ Junior, VJ Jingo, VJ Kevo Watch New Movies by VJ Junior, VJ Jingo, VJ Kevo, Ice P Ulio, Bukoleya, Indian &amp; Turkish Films. ✓ Free Cartoons &amp; Animations. ✓ Translated · SUPER ACTION">
 
 
-    <!-- 🎬 Video Player -->
-    <div class="video-wrapper" style="position:relative; width:100%; height:500px; margin:20px 0;">
-      <iframe class="video-iframe"
-        src="https://movies.ug/videosMnt/Denzel%20Washington-Man%20on%20Fire%20(2004)%20vj%20junior.mp4"
-        style="width:100%; height:100%; border:none;">
-      </iframe>
+    <!-- 🎬 Video Player Container with Ad Overlay Inside the Player -->
+<div id="video-container" style="position:relative; width:100%; height:500px; margin:20px 0;">
+
+    <!-- Video Player (No full-screen functionality) -->
+    <div class="video-wrapper" style="position:relative; width:100%; height:100%;">
+        <video id="videoPlayer" style="width:100%; height:100%" controls>
+            <source src="https://movies.ug/videosMnt/Denzel%20Washington-Man%20on%20Fire%20(2004)%20vj%20junior.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- 🎬 Ad Overlay (Inside Video Container) -->
+    <div id="ad-overlay" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.75); z-index:10; justify-content:center; align-items:center; flex-direction:column;">
+        <!-- Countdown and Skip Button -->
+        <div style="position:absolute; top:20px; right:20px; text-align:right; z-index: 20;">
+            <div id="countdown" style="color:white; font-size:22px; font-weight:bold; margin-bottom:8px;">Skip in: 7</div>
+            <button id="close-ad" style="display:none; background:#fff; border:none; font-size:20px; padding:6px 12px; cursor:pointer; border-radius:4px; font-weight:bold;">Skip</button>
+        </div>
+
+        <!-- Google AdSense Ad Container -->
+        <div id="ad-wrapper" style="display:flex; justify-content:center; align-items:center; width:100%; height:100%; text-align:center;">
+            <!-- AdSense ad will be inserted here dynamically -->
+        </div>
+    </div>
+
+</div>
+
+<!-- 🎬 Google AdSense script -->
+<script async='async' crossorigin='anonymous' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2269884583846743'></script>
+
+<script>
+// Variables to control ad behavior
+let skipClicked = false; // Flag to track if the "Skip" button was clicked
+let videoPlayer = document.getElementById("videoPlayer"); // Video element reference
+
+// Ad configuration for Google AdSense (5 rotating ads)
+const ads = [
+    { client:"ca-pub-2269884583846743", slot:"2359999321", width:300, height:250 },
+    { client:"ca-pub-2269884583846743", slot:"4256856469", width:250, height:250 },
+    { client:"ca-pub-2269884583846743", slot:"2038317814", width:300, height:600 },
+    { client:"ca-pub-2269884583846743", slot:"8811425590", width:320, height:100 },
+    { client:"ca-pub-2269884583846743", slot:"5610977415", width:336, height:280 }
+];
+
+let currentAdIndex = 0; // Keeps track of which ad to show next
+
+// Function to show ad overlay with video and countdown
+function showAdOverlay(customSeconds = 8) {
+    const overlay = document.getElementById("ad-overlay");
+    const countdownEl = document.getElementById("countdown");
+    const closeBtn = document.getElementById("close-ad");
+    const adWrapper = document.getElementById("ad-wrapper");
+
+    overlay.style.display = "flex";
+    closeBtn.style.display = "none"; // Initially hide the button
+    adWrapper.innerHTML = ""; // Clear previous ad content
+
+    // Load ad
+    const ad = ads[currentAdIndex];
+    const ins = document.createElement("ins");
+    ins.className = "adsbygoogle";
+    ins.style.display = "inline-block";
+    ins.style.width = ad.width + "px";
+    ins.style.height = ad.height + "px";
+    ins.setAttribute("data-ad-client", ad.client);
+    ins.setAttribute("data-ad-slot", ad.slot);
+
+    adWrapper.appendChild(ins);
+    (adsbygoogle = window.adsbygoogle || []).push({}); // Request AdSense ad to load
+
+    // Prepare next ad rotation
+    currentAdIndex = (currentAdIndex + 1) % ads.length;
+
+    // Countdown logic
+    let timeLeft = customSeconds;
+    countdownEl.textContent = "Skip in: " + timeLeft;
+
+    const timer = setInterval(function() {
+        timeLeft--;
+        countdownEl.textContent = "Skip in: " + timeLeft;
+
+        if (timeLeft === 0) {
+            closeBtn.style.display = "inline-block"; // Show the skip button after countdown ends
+            closeBtn.textContent = "X"; // Change button to "X"
+            clearInterval(timer);
+        }
+    }, 1000); // 1-second interval for countdown
+
+    // Handle close button behavior
+    closeBtn.onclick = function() {
+        overlay.style.display = "none"; // Close the ad overlay
+        videoPlayer.play(); // Play the video after ad is skipped
+    };
+}
+
+// Special rule: First opening = 2 ads with delay (after 2 minutes)
+function runInitialTwoAds() {
+    setTimeout(() => {
+        // Ad 1 = 7 seconds
+        showAdOverlay(7); // Ad 1 displays for 7 seconds
+
+        // After 7 seconds, show the Skip button
+        setTimeout(() => {
+            const closeBtn = document.getElementById("close-ad");
+            closeBtn.style.display = "inline-block"; // Show "Skip" button
+            closeBtn.textContent = "Skip"; // Set button text to "Skip"
+        }, 7000); // Show Skip button after 7 seconds
+
+        // Check if "Skip" button is clicked before transitioning to Ad 2
+        const closeBtn = document.getElementById("close-ad");
+        closeBtn.onclick = function() {
+            skipClicked = true; // Mark that "Skip" was clicked
+            showAdOverlay(8); // Show Ad 2 immediately (for 8 seconds)
+            closeBtn.style.display = "none"; // Hide the skip button
+        };
+
+        // If "Skip" button isn't clicked, Ad 2 will show after 13 more seconds (20 seconds total)
+        setTimeout(() => {
+            if (!skipClicked) {
+                showAdOverlay(8); // Ad 2 shows for 8 seconds after the delay
+            }
+        }, 20000); // Trigger after 20 seconds (7 seconds for Ad 1 + 13 seconds wait)
+    }, 120000); // Wait 2 minutes (120 seconds) before showing the first ad
+}
+
+// Start the ad sequence
+runInitialTwoAds(); // Display first two ads after 2 minutes (7s + 13s wait = 20s)
+
+// Start full schedule AFTER the second ad finishes
+setTimeout(() => {
+    // Further ad schedule starts here (after initial ads)
+    
+    // 1) 5 minutes (300 seconds)
+    setTimeout(showAdOverlay, 300000);
+
+    // 2) 10 minutes (600 seconds)
+    setTimeout(showAdOverlay, 600000);
+
+    // 3) 20 minutes (1200 seconds)
+    setTimeout(showAdOverlay, 1200000);
+
+    // 4) 30 minutes (1800 seconds)
+    setTimeout(showAdOverlay, 1800000);
+
+    // 5) Every 35 minutes (2100 seconds)
+    setInterval(showAdOverlay, 2100000);
+
+}, 20000); // Wait for the first 20 seconds (7 + 13) to complete, then start the schedule
+
+// Prevent Full-Screen Mode
+videoPlayer.removeAttribute("controlsList"); // Remove full-screen control from the player
+
+// Prevent the user from entering full-screen programmatically
+videoPlayer.addEventListener('fullscreenchange', function() {
+    if (document.fullscreenElement) {
+        document.exitFullscreen(); // Automatically exit fullscreen if attempted
+    }
+});
+
+</script>
     </div>
   </main>
 
